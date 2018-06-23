@@ -1,0 +1,55 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Language" content="zh-tw">
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+	<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+	<meta name="ProgId" content="FrontPage.Editor.Document">
+	<title>線 上 選 課 系 統</title>
+</head>
+<body background = "006.jpg">
+<script language="JavaScript1.1">
+	function checkForm()
+{
+			if(document.a1.id.value=="")  //文字輸入框防呆
+			{
+				alert("請輸入「姓名」");
+				return false;
+			} 
+			if(document.a1.password.value=="")  //文字輸入框防呆
+			{
+				alert("請輸入「密碼」");
+				return false;
+			} 
+}
+</script>
+<form method="post" action = "studenttest.jsp" name = "a1" onsubmit = "return checkForm()" target = "Frame_down"> 
+<center>
+<font size = "6" face = "標楷體" color="white">議 員 選 課 系 統 登 入</font>
+<font size = "4" face = "標楷體" color = "#FFFF00"><marquee  direction="right" height="35" scrollamount="10" behavior="alternate">祝 你/妳 能 選 到 理 想 的 課 程 喔 !!</marquee></font>
+<hr>
+<table border = "1" width = "300" bordercolor="green">
+	<tr align = "center">
+		<th colspan = "2"><font color = "#77DDFF">請輸入姓名/密碼</font></th>
+	</tr>
+	
+	<tr>
+		<td width = "125" height = "30"><font size = "3" color = "#FFBB66"><center>請輸入「姓名」: </font>
+		<font size = "2"><input type = "text" name = "id" size = "10"></font></td>
+	</tr>
+	
+	<tr>
+		<td width = "125" height = "30"><font size = "3" color = "#FFBB66"><center>請輸入「密碼」: </font>
+		<font size = "2"><input type = "text" name = "password" size = "10"></font></td>
+	</tr>
+</table>		
+<BR>
+<input type = "submit" value = "送出資料">        <input type = "reset" value = "清除資料">
+<BR>
+<BR>
+<BR>
+<BR>
+<img src="013.gif" alt="Smiley face" width="1000" height="550">
+</center>
+</form>
+</body>
+</html>
