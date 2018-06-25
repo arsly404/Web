@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="utf-8" />
+	<title>sample</title>
+	<link rel="stylesheet" href="style.css">
+	<!--[if lt IE 9]>
+		<script src="html5shiv.js"></script>
+	<![endif]-->
+	<script src="jquery-1.10.2.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div id="container">
+		<!--頁首-->
+		<header>
+			<div id="logo">
+				<img src="img/logo.png" alt="MdN video">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">home</a></li>
+					<li><a href="#">about</a></li>
+					<li><a href="#">video</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!--區段-->
+		<section>
+			<div class="videoplayer videoplayer-stopped">
+				<div class="videoplayer-video">
+					<video id="myvideo" poster="img/poster.png">
+						<source src="movie/movie.mp4">
+						<source src="movie/movie.webm">
+						<source src="movie/movie.ogv">
+						<p>請使用支援 HTML5 Video 之瀏覽器</p>
+					</video>
+					<div class="videoplayer-cap">
+						<div class="videoplayer-bar">
+							<div class="videoplayer-bar-played"></div>
+						</div>
+					</div>
+				</div>
+				<div class="videoplayer-ui">
+					<div class="videoplayer-playpause"><a href="#">Play</a></div>
+					<div class="videoplayer-rewind"><a href="#">Rewind</a></div>
+					<div class="videoplayer-time">00:00 / --:--</div>
+					<div class="videoplayer-volume"><a href="#">Volume</a></div>
+				</div>
+			</div>
+		</section>
+
+		<!--頁尾-->
+		<footer>
+			<div id="copyright">Copyright © 2014 MdN video All Right Reserved.</div>
+		</footer>
+	</div>
+</body>
+</html>

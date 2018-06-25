@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="utf-8" />
+	<title>sample</title>
+	<link rel="stylesheet" href="style.css">
+	<!--[if lt IE 9]>
+		<script src="html5shiv.js"></script>
+	<![endif]-->
+	<script src="jquery-1.10.2.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div id="container">
+		<!--頁首-->
+		<header>
+			<div id="logo">
+				<img src="img/logo.png" alt="MdN music">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">home</a></li>
+					<li><a href="#">about</a></li>
+					<li><a href="#">music</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!--區段-->
+		<section>
+			<h1>30 seconds</h1>
+			<div>
+				<audio id="myaudio">
+					<source src="sound/30_seconds.mp3">
+					<source src="sound/30_seconds.wav">
+					<source src="sound/30_seconds.ogg">
+					<p>請使用支援 HTML5 Audio 的瀏覽器</p>
+				</audio>
+				<div class="audioplayer audioplayer-stopped">
+					<div class="audioplayer-playpause"><a href="#">Play</a></div>
+					<div class="audioplayer-current">00:00</div>
+					<div class="audioplayer-bar">
+						<div class="audioplayer-bar-played"></div>
+					</div>
+					<div class="audioplayer-duration">--:--</div>
+					<div class="audioplayer-volume"><a href="#">Volume</a></div>
+				</div>
+			</div>
+		</section>
+
+		<!--頁尾-->
+		<footer>
+			<div id="copyright">Copyright © 2014 MdN music All Right Reserved.</div>
+		</footer>
+	</div>
+</body>
+</html>
