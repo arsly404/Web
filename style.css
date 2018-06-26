@@ -99,7 +99,7 @@ h1 {
 }
 
 .audioplayer-playing .audioplayer-playpause a {
-	background:url("Music/controls.png") left bottom;
+	background:url("Music/img/controls.png") left bottom;
 }
 
 /* 播放時間 */
